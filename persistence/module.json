@@ -1,0 +1,5 @@
+{
+  "module": "persistence",
+  "owning_cycle": 10,
+  "platform_boundary": false
+}

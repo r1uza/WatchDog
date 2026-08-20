@@ -1,0 +1,18 @@
+{
+  "android_artifacts": {
+    "aab": {
+      "status": "REQUIRES_ANDROID_SDK_BUILD"
+    },
+    "apk": {
+      "status": "REQUIRES_ANDROID_SDK_BUILD"
+    }
+  },
+  "application_id": "dev.sfstudio.watchdog",
+  "channel": "PRODUCTION",
+  "distribution_id": "watchdog:distribution:0.32.0:production",
+  "note": "No fabricated Android binaries are shipped by this source materialization.",
+  "signing_secrets_in_repository": false,
+  "source_configuration": "VERIFIED_BY_REPOSITORY_VERIFIER",
+  "version": "0.32.0",
+  "version_code": 32
+}

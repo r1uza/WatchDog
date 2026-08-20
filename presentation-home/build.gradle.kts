@@ -1,0 +1,8 @@
+plugins { `java-library` }
+java { toolchain { languageVersion.set(JavaLanguageVersion.of(17)) } }
+
+dependencies {
+    implementation(project(":health"))
+    implementation(project(":alert"))
+    implementation(project(":background"))
+}

@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Java / Gradle
+.gradle/
+build/
+out/
+**/build/
+
+# Logs
+*.log
+
+# Archives / binaries
+*.apk
+*.aab
+*.keystore
+*.jks
+*.p12
+*.zip
+*.tar
+*.gz
+
+# Secrets / env
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Local tool outputs
+coverage/
+reports/

@@ -1,0 +1,5 @@
+{
+  "module": "lifecycle",
+  "owning_cycle": 30,
+  "platform_boundary": false
+}

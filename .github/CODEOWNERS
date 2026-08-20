@@ -1,0 +1,21 @@
+# Global fallback
+* @watchdog-maintainers
+
+# Core architecture and governance
+/OPEN_CORE_* @watchdog-maintainers
+/WATCHDOG_OPEN_CORE_REPORT.md @watchdog-maintainers
+/docs/ @watchdog-maintainers
+
+# Domain modules
+/core/ @watchdog-core
+/foundation/ @watchdog-core
+/identity/ @watchdog-core
+/watch/ @watchdog-domain
+/health/ @watchdog-domain
+/diagnostics/ @watchdog-domain
+/security/ @watchdog-domain
+/resilience/ @watchdog-domain
+/resource-governance/ @watchdog-domain
+
+# Presentation modules
+/presentation-*/ @watchdog-ui

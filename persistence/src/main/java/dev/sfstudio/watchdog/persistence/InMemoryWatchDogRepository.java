@@ -1,0 +1,4 @@
+package dev.sfstudio.watchdog.persistence;
+
+import dev.sfstudio.watchdog.alert.Alert; import dev.sfstudio.watchdog.journal.JournalEntry; import dev.sfstudio.watchdog.snapshot.DeviceSnapshot; import java.util.*;
+public final class InMemoryWatchDogRepository implements WatchDogRepository { private final Map<String,DeviceSnapshot> snapshots=new LinkedHashMap<>(); private final Map<String,Alert>alerts=new LinkedHashMap<>(); private final List<JournalEntry> journal=new ArrayList<>(); public void saveSnapshot(DeviceSnapshot s){snapshots.put(s.snapshotId(),s);} public void saveAlert(Alert a){alerts.put(a.alertId(),a);} public void appendJournal(JournalEntry e){journal.add(e);} public Optional<Alert> alert(String id){return Optional.ofNullable(alerts.get(id));} public List<JournalEntry> journal(){return List.copyOf(journal);} }

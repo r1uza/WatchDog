@@ -1,0 +1,17 @@
+{
+  "components": [
+    {
+      "name": "Java Standard Library",
+      "type": "platform",
+      "version": "17+"
+    },
+    {
+      "name": "Android SDK",
+      "type": "platform-boundary",
+      "version": "configured-by-build-environment"
+    }
+  ],
+  "format": "watchdog-sbom/1",
+  "runtime_network_clients": [],
+  "version": "0.32.0"
+}

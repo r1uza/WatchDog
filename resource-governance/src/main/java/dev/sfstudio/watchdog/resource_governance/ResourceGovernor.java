@@ -1,0 +1,3 @@
+package dev.sfstudio.watchdog.resource_governance;
+
+public final class ResourceGovernor { public ResourceDecisionType decide(ResourcePressureLevel pressure, boolean criticalDomainWrite, boolean degradable){ if(criticalDomainWrite && pressure!=ResourcePressureLevel.UNKNOWN) return ResourceDecisionType.ALLOW; return switch(pressure){ case NORMAL,ELEVATED -> ResourceDecisionType.ALLOW; case HIGH -> degradable?ResourceDecisionType.DEGRADE:ResourceDecisionType.DEFER; case CRITICAL -> degradable?ResourceDecisionType.DEGRADE:ResourceDecisionType.DENY; case UNKNOWN -> ResourceDecisionType.DEFER; }; } }
